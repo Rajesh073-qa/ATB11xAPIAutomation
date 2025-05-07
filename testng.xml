@@ -1,2 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd"><suite name="All Test Suite"><test verbose="2" preserve-order="true" name="C:/Users/csraj/IdeaProjects/ATB11xAPIAutomation/src/test/java"><classes/></test></suite>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="C:/Users/csraj/IdeaProjects/ATB11xAPIAutomation/src/test/java/com/testing/ex_05_TestNGExamples">
+        <classes>
+            <class name="com.testing.ex_05_TestNGExamples.APITesting014">
+                <methods>
+                    <include name="test_post_request2"/>
+                </methods>
+            </class>
+            <class name="com.testing.ex_05_TestNGExamples.APITesting015_BeforeTest">
+                <methods>
+                    <include name="test_PUT"/>
+                </methods>
+            </class>
+            <class name="com.testing.ex_05_TestNGExamples.APITesting016_TestNG_Priority">
+                <methods>
+                    <include name="t1"/>
+                    <include name="t2"/>
+                    <include name="t3"/>
+                    <include name="t4"/>
+                </methods>
+            </class>
+            <class name="com.testing.ex_05_TestNGExamples.APITesting018_TestNG_DependsOnMethod">
+                <methods>
+                    <include name="serverStartedOk"/>
+                    <include name="test1"/>
+                    <include name="test2"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
